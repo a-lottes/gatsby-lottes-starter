@@ -5,12 +5,9 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Lottes Gatsby starter
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
@@ -19,8 +16,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # create a new Gatsby site using the lottes starter
+    gatsby new my-default-starter https://github.com/a-lottes/gatsby-lottes-starter
     ```
 
 1.  **Start developing.**
@@ -57,6 +54,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package-lock.json
     ├── package.json
     └── README.md
+    └── yarn.lock
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
@@ -92,8 +90,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/a-lottes/gatsby-lottes-default)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/a-lottes/gatsby-lottes-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
