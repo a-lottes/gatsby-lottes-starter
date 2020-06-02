@@ -74,6 +74,7 @@ footer{
   color: white;
   font-size: 0.85rem;
   background: #3C3C3B;
+  border-top: 3px solid #6d2f9c;
 }
 footer a{
   color: white !important;
@@ -155,10 +156,10 @@ nav>a{
 }
 nav>a.active{
   font-weight: 800;
-  color: #5CB8B2;
+  color: #ffffff;
 }
 nav>a:hover{
-	background: #008580;
+	background: #ffffff1c;
   color: white !important;
 }
 #open{
@@ -733,7 +734,7 @@ pre tt:after {
 section{
 	width: 100%;
 	height: auto;
-	background: #5CB8B2;
+	background: #6d2f9c;
 }
 .section-left,
 .section-right{
@@ -766,13 +767,13 @@ section{
   margin: 4.5em auto 0;
   padding: .5em 3em;
   cursor: pointer;
-  background: #FA7800;
+  background: #ffaf1f;
   font-size: .8em;
   color: white;
   font-weight: 700;
 }
 .learn-more:hover{
-	background: #008580;
+	background: #d96028;
 }
 .learn-more:active{
 	box-shadow: inset 0 2px 0 rgba(0,0,0,.8);

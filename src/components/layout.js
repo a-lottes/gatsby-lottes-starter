@@ -12,7 +12,6 @@ import { Location } from '@reach/router'
 
 import Header from "./header"
 import Footer from "./footer"
-import Hero from "./hero"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -32,8 +31,7 @@ const Layout = ({ children }) => {
         {({ location }) => {
           return <Header siteTitle={data.site.siteMetadata.title} location={location.pathname} />
         }}
-    </Location>
-      <Hero />
+      </Location>
       <div
         className={'container'}
       >
@@ -45,7 +43,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout

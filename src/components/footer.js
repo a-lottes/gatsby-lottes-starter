@@ -14,7 +14,7 @@ class Footer extends React.Component {
         <div className={'container'}> 
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> by <a href="https://n4.de">N4</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> by <a href="https://github.com/a-lottes/">a-lottes</a>
         </div>
       
     </footer>
