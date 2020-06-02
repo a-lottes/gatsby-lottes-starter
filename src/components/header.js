@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Hero from "./hero"
-let hero = <Hero/>
+let hero = <Hero />
 
 class Header extends React.Component {
 
@@ -19,9 +19,9 @@ class Header extends React.Component {
   };
 
   render() {
-    const { siteTitle, Location } = this.props
+    const { siteTitle } = this.props
     if (this.props.location === "/") {
-      hero = <Hero/>;
+      hero = <Hero />;
     } else {
       hero = '';
     }
