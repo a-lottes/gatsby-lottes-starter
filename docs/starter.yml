@@ -1,0 +1,16 @@
+- url: 
+  repo: https://github.com/a-lottes/gatsby-lottes-starter
+  description: A Gatsby starter for creating blogs and small business websites.
+  tags:
+    - Blog
+    - SEO
+    - Styling:CSS
+    - CSS
+  features:
+    - Data sourcing from Local CSS Files
+    - Responsive design and navigation
+    - SEO optimized
+    - OpenGraph structured data
+    - Offline Support
+    - Composable and extensible
+    - Example of static Markdown, JavaScript and TypeScipt sites
