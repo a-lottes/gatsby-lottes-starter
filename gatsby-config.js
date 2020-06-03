@@ -5,6 +5,7 @@ module.exports = {
     author: `@a-lottes`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-transformer-csv`,
     {
       resolve: `gatsby-source-filesystem`,

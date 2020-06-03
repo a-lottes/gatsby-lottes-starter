@@ -12,7 +12,7 @@ import { Location } from '@reach/router'
 
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
