@@ -1,15 +1,17 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout/layout"
+import SEO from "../components/elements/seo"
+import Title from "../components/elements/title"
 
 class ThirdPage extends React.Component {
   render() {
     const data = this.props.data.allExampleCsv.edges
     return (
       <Layout>
-        <SEO title="Page two" />
+        <SEO title="Example with CSV Data" />
+        <Title title="CSV Data Example" />
         <div className="container">
           <main>
             <h2>Hi from the Data page</h2>

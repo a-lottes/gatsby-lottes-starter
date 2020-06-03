@@ -2,8 +2,9 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout/layout"
+import SEO from "../components/elements/seo"
+import Title from "../components/elements/title"
 
 type DataProps = {
   site: {
@@ -14,6 +15,7 @@ type DataProps = {
 const TypescriptPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
     <SEO title="Using TypeScript" />
+    <Title title="TypeScript Page Example" />
     <div className="container">
       <main>
         <h2>Gatsby supports TypeScript by default!</h2>

@@ -1,4 +1,4 @@
-$font-family: 'Source Sans Pro', Helvetica, arial, sans-serif;
+$font-family: 'Varela Round', Helvetica, arial, sans-serif;
 
 *{
   margin: 0;
@@ -26,6 +26,7 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -37,8 +38,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
-header,
 main,
 menu,
 nav,
@@ -72,19 +71,6 @@ audio:not([controls]) {
 progress {
   vertical-align: baseline;
 }
-footer{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: white;
-  font-size: 0.85rem;
-  background: #3C3C3B;
-  border-top: 3px solid #6d2f9c;
-  a{
-    color: white !important;
-    text-decoration: none;
-  }
-}
-
 [hidden],
 template {
   display: none;
@@ -96,81 +82,15 @@ template {
 main{
   padding: 1em 0 1em 0;
 }
-header{
-	width: 100%;
-	height: auto;
-  background-image: linear-gradient(#3C3C3B, #3C3C3B);
-  .header-left,
-  .header-right{
-    position: relative;
-    color: white;
-    float: left;
-  }
-  .header-left{
-    width: 30%;
-  }
-  .header-right{
-    width: 70%;
-    text-align: right;
-    label{
-      position: absolute;
-      top: -3.7em;
-      right: 0;
-      cursor: pointer;
-    }
-    span{
-      position: relative;
-      width: 2em;
-      height: 2em;
-      background: rgba(255,255,255,.3);
-      -webkit-transition: all .3s ease;
-      &:hover{
-        background: rgba(255,255,255,.6);
-      }
-      &:before,
-      &:after{
-        content: '';
-        position: absolute;
-        width: 2em;
-        height: .5em;
-        top: 4px;
-        left: 0;
-        background: black;
-      }
-      &:after{
-        top: 14px;
-      }
-    }
-  } 
-}
 
 h1>a{
-  color: white;
+  color: #fc3565;
   text-decoration: none;
   font-size: 22px;
   line-height: 40px;
+  font-weight: 100;
 }
-nav>a{
-  text-decoration: none;
-  color: white;
-	position: relative;
-	display: inline-block;
-	font-size: 13px;
-	line-height: 40px;
-	padding: 0 2em;
-	-webkit-transition: all .3s ease;
-}
-nav>a.active{
-  font-weight: 800;
-  color: #ffffff;
-}
-nav>a:hover{
-	background: #ffffff1c;
-  color: white !important;
-}
-#open{
-	display: none;
-}
+
 a {
 	text-decoration: none;
   background-color: transparent;
@@ -348,8 +268,6 @@ h1 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
 }
@@ -363,8 +281,6 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -380,8 +296,6 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -397,8 +311,6 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -414,8 +326,6 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -431,8 +341,6 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -740,7 +648,12 @@ pre tt:after {
 section{
 	width: 100%;
 	height: auto;
-	background: #6d2f9c;
+  background: #2f303e;
+  h2{
+    font-size: 18px;
+    line-height: 2rem;
+    //color: #bfbfbf !important;
+  }
 }
 .section-left,
 .section-right{
@@ -762,7 +675,6 @@ section{
 	-webkit-transition: all .4s ease;
 }
 .section-title{
-	font-size: em;
 	margin-bottom: .3em;
 }
 .section-tagline{
@@ -770,21 +682,21 @@ section{
 }
 .learn-more{
   display: table;
-  margin: 4.5em auto 0;
+  margin: 4em auto 0;
   padding: .5em 3em;
   cursor: pointer;
-  background: #ffaf1f;
+  background: #fc3565;
   font-size: .8em;
   color: white;
-  font-weight: 700;
+  font-weight: 800;
+  border-radius: 25px;
+  &:hover{
+    background: darken(#fc3565, 10);
+  }
+  &:active{
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.8);
+  }
 }
-.learn-more:hover{
-	background: #d96028;
-}
-.learn-more:active{
-	box-shadow: inset 0 2px 0 rgba(0,0,0,.8);
-}
-
 
 @media (max-width: 979px) {
 	body{
@@ -792,6 +704,9 @@ section{
 	}
 	.container{
 		width: 90%;
+  }
+  section{
+    background: #282931;
   }
   .section-left,
 	.section-right{
@@ -804,8 +719,8 @@ section{
 		padding: 0 0 2em;
 	}
 	.section-title{
-		font-size: 2em;
-		margin-bottom: .2em;
+    margin-bottom: .2em;
+    text-align: center;
 	}
 	.section-tagline{
 		font-size: 1.2em;
@@ -813,100 +728,7 @@ section{
 	.learn-more{
 		margin: 0 auto;
 	}
-	nav{
-		height: 0;
-		overflow: hidden;
-		-webkit-transition: all .3s ease;
-	}
-	input[type="checkbox"]:checked + nav{
-		height: 205px;
-	}
-	nav>a{
-		padding: 0 1em;
-		display: block;
-		border-bottom: solid 1px rgba(255,255,255,.1);
-  }
 	h1{
 		padding: .5em 0;
   }
-  header {
-    .header-left,
-    .header-right{
-      width: 100%;
-      text-align: center;
-      float: none;
-    }
-    .hidden-desktop{
-      display: block;
-    }
-    .hamburger {
-      margin: auto;
-      width: 20px;
-      height: 13px;
-      cursor: pointer;
-      margin-top: 15px;
-    }
-    .hamburger__inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-    .hamburger__bars {
-      position: absolute;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #fff;
-      -webkit-transition: 0.3s all ease;
-      -moz-transition: 0.3s all ease;
-      -o-transition: 0.3s all ease;
-      transition: 0.3s all ease;
-      will-change: transform;
-    }
-    .hamburger__bars--1 {
-      top: 0;
-      width: 60%;
-    }
-    .hamburger__bars--2, .hamburger__bars--3 {
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .hamburger__bars--4 {
-      bottom: -1px;
-      width: 80%;
-    }
-    .hamburger.active .hamburger__bars--1,
-    .hamburger.active .hamburger__bars--4 {
-      -webkit-transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      -o-transform: scaleX(0);
-      transform: scaleX(0);
-    }
-    .hamburger.active .hamburger__bars--2 {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-    .hamburger.active .hamburger__bars--3 {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-    }
-    .hamburger.active .hamburger__bars--1,
-    .hamburger.active .hamburger__bars--4 {
-      -webkit-transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      -o-transform: scaleX(0);
-      transform: scaleX(0);
-    }
-  }
-	
 }

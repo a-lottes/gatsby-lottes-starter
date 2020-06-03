@@ -26,7 +26,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Source Sans Pro`,
+            family: `Varela Round`,
             variants: [`100`,`300`,`400`, `700`]
           }
         ],
