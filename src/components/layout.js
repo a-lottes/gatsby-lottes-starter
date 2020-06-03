@@ -32,11 +32,7 @@ const Layout = ({ children }) => {
           return <Header siteTitle={data.site.siteMetadata.title} location={location.pathname} />
         }}
       </Location>
-      <div
-        className={'container'}
-      >
-        <main>{children}</main>
-      </div>
+      {children}
       <Footer />
     </>
   )

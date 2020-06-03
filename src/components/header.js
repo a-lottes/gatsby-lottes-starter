@@ -2,9 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import Hero from "./hero"
-let hero = <Hero />
-
 class Header extends React.Component {
 
   constructor(props) {
@@ -20,11 +17,6 @@ class Header extends React.Component {
 
   render() {
     const { siteTitle } = this.props
-    if (this.props.location === "/") {
-      hero = <Hero />;
-    } else {
-      hero = '';
-    }
     return (
       <>
         <header className={'clearfix'}>
@@ -61,7 +53,6 @@ class Header extends React.Component {
             </div>
           </div>
         </header>
-        {hero}
       </>
     )
   }

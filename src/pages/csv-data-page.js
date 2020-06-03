@@ -10,9 +10,11 @@ class ThirdPage extends React.Component {
     return (
       <Layout>
         <SEO title="Page two" />
-        <h2>Hi from the Data page</h2>
-        <p>Welcome to page 3</p>
-        <table>
+        <div className="container">
+          <main>
+            <h2>Hi from the Data page</h2>
+            <p>Welcome to page 3</p>
+            <table>
               <thead>
                 <tr>
                   <th>Letter</th>
@@ -28,7 +30,8 @@ class ThirdPage extends React.Component {
                 ))}
               </tbody>
             </table>
-        <Link to="/">Go back to the homepage</Link>
+          </main>
+        </div>
       </Layout>
     )
   }

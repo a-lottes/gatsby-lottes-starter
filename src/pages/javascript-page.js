@@ -7,9 +7,13 @@ import SEO from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="JavaScript Page" />
-    <h2>This is a JavaScript page-template</h2>
-    <p>Welcome to page</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="container">
+      <main>
+        <h2>This is a JavaScript page-template</h2>
+        <p>Welcome to page</p>
+        <Link to="/">Go back to the homepage</Link>
+      </main>
+    </div>
   </Layout>
 )
 
