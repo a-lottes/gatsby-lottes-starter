@@ -4,11 +4,12 @@ import Layout from "../components/layout/layout"
 import Image from "../components/elements/image"
 import SEO from "../components/elements/seo"
 import Hero from "../components/elements/hero"
+import Testimonials from "../components/elements/testimonials"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero/>
+    <Hero />
     <div className="container">
       <main>
         <h2>Hi people</h2>
@@ -19,6 +20,7 @@ const IndexPage = () => (
         </div>
       </main>
     </div>
+    <Testimonials />
   </Layout>
 )
 

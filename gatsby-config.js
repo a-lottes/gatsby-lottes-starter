@@ -1,3 +1,5 @@
+const { typeNameFromDir } = require("gatsby-transformer-csv")
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Lottes Starter`,
@@ -12,6 +14,7 @@ module.exports = {
       options: {
         path: `${__dirname}/src/data`,
         name: `data`,
+        typeName: typeNameFromDir,
       },
     },
     {
