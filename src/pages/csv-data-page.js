@@ -8,6 +8,8 @@ import Title from "../components/elements/title"
 class ThirdPage extends React.Component {
   render() {
     const data = this.props.data.allExampleCsv.edges
+
+    console.log(this.props)
     return (
       <Layout>
         <SEO title="Example with CSV Data" />
