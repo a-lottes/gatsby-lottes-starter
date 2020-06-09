@@ -8,7 +8,7 @@ import Title from "../components/elements/title"
 const SecondPage = () => (
   <Layout>
     <SEO title="JavaScript Page" />
-    <Title title="JavaScript Page" />
+    <Title title="JavaScript Page Example" />
     <div className="container">
       <main>
         <h2>This is a JavaScript page-template</h2>

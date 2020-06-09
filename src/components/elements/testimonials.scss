@@ -1,0 +1,55 @@
+.testimonial{
+    .name{
+        font-weight: 800;
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    .image{
+        display: block;
+        margin: 0 auto;
+        max-width: 80px;
+        img{
+            border-radius: 100%;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .text{
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        &::before,
+        &::after{
+            content: '"';
+        }
+    }
+}
+.testimonial-nav{
+    position: relative;
+    bottom: 6.5rem;
+    .btn-prev,
+    .btn-next{
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        position: absolute;
+        background:none;
+        &::before{
+            color: grey;
+        }
+    }
+    .btn-prev{
+        left: 0;
+        &::before{
+            content: '<';
+        }
+    }
+    .btn-next{
+        right: 0;
+        &::before{
+            content: '>';
+        }
+    }
+}
