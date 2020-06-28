@@ -13,11 +13,11 @@
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Use the Gatsby CLI to create a new site, specifying the lottes starter.
 
     ```shell
     # create a new Gatsby site using the lottes starter
-    gatsby new my-default-starter https://github.com/a-lottes/gatsby-lottes-starter
+    gatsby new my-lottes-starter https://github.com/a-lottes/gatsby-lottes-starter
     ```
 
 1.  **Start developing.**
@@ -25,7 +25,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    cd my-lottes-starter/
     gatsby develop
     ```
 
@@ -53,7 +53,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
-    └── README.md
+    ├──  README.md
     └── yarn.lock
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.

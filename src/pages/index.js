@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import Image from "../components/elements/image"
 import SEO from "../components/elements/seo"
-import Hero from "../components/elements/hero"
+import Hero from "../components/Hero/"
 import Testimonials from "../components/elements/testimonials"
 
 const IndexPage = () => (
