@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-import "./testimonials.scss"
+import "./style.scss"
 
 export default function Testimonials() {
   const [index, setIndex] = React.useState(0)
